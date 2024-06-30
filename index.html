@@ -1,0 +1,60 @@
+<!-- <!DOCTYPE html>  -->
+<html lang="PT-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div> <!-- Tag   -->
+        <h1>Cadastro para a Samusic</h1> <!-- Grande prioridade da letra tag -->
+        <p>Coloque aqui suas informações</p> <!--tag de parágrafo-->
+        <br> <!--Pular linha-->
+    </div>
+    <form class="form"> <!--tag formulário-->
+        <div class="campo">
+            <label for="nome">Nome</label><!--explicacao do campo-->
+            <input type="text" name="nome" id="nome">
+        </div>
+        <div class="campo">
+            <label for="sobrenome">Sobrenome</label>
+            <input type="text" name="sobrenome" id="sobrenome">
+        </div>
+        <div class="campo">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div class="label">
+            <p>De onde você é?</p>
+            <div class="campo">
+                <input type="radio" name="brasilia" id="brasilia">
+                <label for="brasilia">Brasília</label>
+            </div>
+            <div class="campo">
+                <input type="radio" name="outro-estado" id="outro-estado">
+                <label for="outro-estado">Outro estado</label>
+            </div>
+            <div class="campo">
+                <input type="radio" name="outro-pais" id="outro-pais">
+                <label for="outro-pais">Outro País</label>
+            </div>
+            <div>
+                <label for="instrumento">Istrumento</label>
+                <select name="instrumento" id="Istrumento">
+                <option selected disabled value="">Selecione</option>
+                    <option value="baixo">Baixo</option>
+                    <option value="teclado">Teclado</option>
+                    <option value="violao">Violão</option>
+                </select>
+            </div>
+        </div>
+        <div>
+            <button>Enviar</button> <!--Tag butao-->
+        </div>
+    </form>
+</body>
+
+</html>
