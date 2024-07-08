@@ -4,57 +4,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
+    <title>Samusic</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div> <!-- Tag   -->
-        <h1>Cadastro para a Samusic</h1> <!-- Grande prioridade da letra tag -->
-        <p>Coloque aqui suas informações</p> <!--tag de parágrafo-->
-        <br> <!--Pular linha-->
-    </div>
-    <form class="form"> <!--tag formulário-->
-        <div class="campo">
-            <label for="nome">Nome</label><!--explicacao do campo-->
-            <input type="text" name="nome" id="nome">
-        </div>
-        <div class="campo">
-            <label for="sobrenome">Sobrenome</label>
-            <input type="text" name="sobrenome" id="sobrenome">
-        </div>
-        <div class="campo">
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email">
-        </div>
-        <div class="label">
-            <p>De onde você é?</p>
+    <main>
+        <section> <!-- Tag   -->
+            <h1>Cadastro para a Samusic</h1> <!-- Grande prioridade da letra tag -->
+            <p>Coloque aqui suas informações</p> <!--tag de parágrafo-->
+        </section>
+        <form class="form"> <!--tag formulário-->
             <div class="campo">
-                <input type="radio" name="brasilia" id="brasilia">
-                <label for="brasilia">Brasília</label>
+                <label for="full-name">Nome completo</label><!--explicacao do campo-->
+                <input type="text" name="full-name" id="full-name" required>
             </div>
             <div class="campo">
-                <input type="radio" name="outro-estado" id="outro-estado">
-                <label for="outro-estado">Outro estado</label>
+                <label for="cpf">CPF</label>
+                <input type="number" name="number" id="number" required>
             </div>
             <div class="campo">
-                <input type="radio" name="outro-pais" id="outro-pais">
-                <label for="outro-pais">Outro País</label>
+                <label for="age">Idade</label>
+                <input type="date" name="date" id="date" required>
+            </div>
+            <div class="campo">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div class="label">
+                <p>De onde você é?</p>
+                <div class="campo">
+                    <input type="radio" name="city" id="brasilia" value="brasilia" required>
+                    <label for="brasilia">Brasília</label>
+                </div>
+                <div class="campo">
+                    <input type="radio" name="city" id="outro-estado" required>
+                    <label for="outro-estado">Outro estado</label>
+                </div>
+                <div class="campo">
+                    <input type="radio" name="city" id="outro-pais" required>
+                    <label for="outro-pais">Outro País</label>
+                </div>
+                <div class="select">
+                    <label for="instrumento">Istrumento</label>
+                    <select name="instrumento" id="Istrumento">
+                        <option selected disabled value="">Selecione</option>
+                        <option value="baixo">Baixo</option>
+                        <option value="teclado">Teclado</option>
+                        <option value="violao">Violão</option>
+                    </select>
+                    <div class="level">
+                        <label for="level">Seu nível na música</label>
+                        <select name="level" id="Level">
+                            <option selected disabled value="">Selecione</option>
+                            <option value="beginner">Iniciante</option>
+                            <option value="intermediary">Intermediario</option>
+                            <option value="experienced">Experiente</option>
+                        </select>
+                        <div class="text">
+                            <label for="experienced">Me conte um pouco da sua experiência com a música:</label>
+                            <textarea name="experienced" id="experienced"></textarea>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div>
-                <label for="instrumento">Istrumento</label>
-                <select name="instrumento" id="Istrumento">
-                <option selected disabled value="">Selecione</option>
-                    <option value="baixo">Baixo</option>
-                    <option value="teclado">Teclado</option>
-                    <option value="violao">Violão</option>
-                </select>
+                <br>
+                <button type="submit">Enviar</button> <!--Tag butao-->
             </div>
-        </div>
-        <div>
-            <button>Enviar</button> <!--Tag butao-->
-        </div>
-    </form>
+        </form>
+    </main>
 </body>
 
 </html>
